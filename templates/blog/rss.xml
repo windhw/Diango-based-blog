@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+  <title>风语杨柳岸</title>
+  <link>http://willow-wind.appspot.com</link>
+  <description><![CDATA[风语杨柳岸－最新文章]]></description>
+  <language>zh-cn</language>
+  <copyright>&amp;copy; 2009, willow-wind.appspot.com </copyright>
+  <pubDate>{{pub_date}}</pubDate>
+  {%for article in latest_articles %}
+    <item>
+        <title>{{article.title}}</title>
+        <link>http://willow-wind.appspot.com/blog/article/{{article.id}}</link>
+        <description><![CDATA[ {{article.content}}
+        ]]></description>
+        <content:encoded><![CDATA[{{article.content}}]]></content:encoded>
+        <dc:creator>淡淡的</dc:creator>
+        <pubDate>{{article.gmtdate}}</pubDate>
+        <guid isPermaLink="true">http://willow-wind.appspot.com/blog/article/20091030161651</guid>
+    </item>
+{% endfor %}
+    
+
+    </channel>
+</rss>

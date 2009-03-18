@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head><title>党支部问卷调查</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta http-equiv="Pragma" content="no-cache" /> 
+    <link href="http://otho.douban.com/css/packed_douban172.css" rel="stylesheet" type="text/css" /><script src="http://otho.douban.com/js/packed_jquery0.js"></script><script src="http://otho.douban.com/js/packed_jquery.suggest0.js"></script><script src="http://otho.douban.com/js/packed_douban50.js"></script><link rel="shortcut icon" href="http://t.douban.com/favicon.ico" type="image/x-icon" /> 
+    </head> 
+    <body> 
+    <div id="wrapper"> 
+    
+    <div id="header"> 
+            <form id="ssform" name="ssform" method="get" action="/subject_search"> 
+                <a href="/survey/" title="问卷调查"><img src="/static/logo.gif" alt="问卷" class="logo"/></a>
+                
+                <div id="na4v"><a class="now" href="/">
+                <span>首页</span></a> <a href="/survey/other">其它</a> 
+                </div> 
+                
+                <div class="clear"></div>
+                <div id="status"><div id="subnav"></div>
+                <a href="/survey/result">去查看结果</a>  <a href="/logout">退出</a></div> 
+                <div class="clear"></div>
+            </form>
+    </div>
+    
+<h1>XX党支部的问卷调查</h1> 
+    
+    <div> 
+    <style type="text/css"> 
+    td {
+    font: 14px Arial, Helvetica, sans-serif;
+    }
+    label{margin-right:12px}
+    h3{margin-top:20px}
+    #step3,#step2,#step1{width:600px;margin-left:0}
+    #step2,#step3{display:none}
+    #ele_ques_tbl { border:grey; }
+    #ele_ques_tbl td { line-height:175%; }
+    </style> 
+ 
+    <table name="box" align="center"> 
+    <table name="main"> 
+    <form name="form_survey" id="form_survey" method="post" action="/survey/post">
+    <div style="display:none;"><input type="hidden" name="ck" value="sSZA"/></div> 
+    <div id="step1"><p class="pl">音乐电台正在测试阶段，感谢你的试用，我们还想了解下你具体使用的情况，以便能进一步改进，谢谢你参与。</p> 
+
+    <p class="pl">你的回答信息将会被严格保密。</p> 
+    <h3>第一眼看到这个电台时，你觉得它像什么？</h3>
+    
+    <div><div>
+        <input name="q201" id="q201_0" type="radio" value="0" class="radio" /><label for="q201_0">像个播放器</label>&nbsp
+        <input name="q201" id="q201_1" type="radio" value="1" class="radio" /><label for="q201_1">像个收音机</label>&nbsp
+        <input name="q201" id="q201_2" type="radio" value="2" class="radio" /><label for="q201_2">没感觉</label>&nbsp
+    </div></div>
+            
+    <h3>你是怎样在用它呢?(多选)</h3>
+    <div><input name="q203" id="q203_0" type="checkbox" value="0" style="margin-left:4px"/><label for="q203_0">当背景音乐用</label><br/><input name="q203" id="q203_1" type="checkbox" value="1" style="margin-left:4px"/><label for="q203_1">用来发现新歌曲</label><br/><input name="q203" id="q203_2" type="checkbox" value="2" style="margin-left:4px"/><label for="q203_2">用来收藏听过的歌</label><br/></div><div><input name="q203" id="cq_203" type="checkbox"
+    value="o3"/>其它：
+    <input name="q203_other" id="q203_other"
+    onClick="javascript:trigger_other_check('cq_203')"/> 
+    </div> 
+    <h3>通常都是在什么场合使用这个音乐电台？</h3>
+    <div><div><input name="q206" type="radio" id="q206_0" value="0"
+            onChange="javascript:trigger_other('q206_other')" /><label for="q206_0">办公室</label>&nbsp;<input name="q206" type="radio" id="q206_1" value="1"
+            onChange="javascript:trigger_other('q206_other')" /><label for="q206_1">家里</label>&nbsp;<input name="q206" type="radio" id="q206_2" value="2"
+            onChange="javascript:trigger_other('q206_other')" /><label for="q206_2">公共场所</label>&nbsp;</div><div> 
+        <input name="q206" id="cq_206" type="radio" value="o3"/>其它：
+        <input name="q206_other" id="q206_other"
+        onClick="javascript:trigger_other_check('cq_206')"/> 
+        </div> 
+    <div style="margin-top:20px"><input type="submit" value=" 提 交 答 案 " /></div> 
+    </div> 
+    </form> 
+    </table> 
+    </td><td></td></tr> 
+    </table> 
+    </div> 
+    
+    
+        <div id="footer"> 
+        </div> 
+        </div>
+       <!-- eowyn --></body></html>

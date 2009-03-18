@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>风语杨柳岸-编辑文章</title>
+<script>
+function rec_a(id){
+pop_win.load('/reader/rec_article?article='+id)
+}
+</script>
+<script type="text/javascript" src="/scripts/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript">
+<!--
+tinyMCE.init({
+	// General options
+	mode : "textareas",
+	theme : "advanced",
+
+	// Theme options
+	theme_advanced_buttons1 : "bold,italic,|,formatselect,|,bullist,numlist,|,blockquote,link,unlink,anchor,image,hr,|,cleanup,code,help",
+	theme_advanced_buttons2 : "",
+	theme_advanced_buttons3 : "",
+	theme_advanced_toolbar_location : "top",
+	theme_advanced_toolbar_align : "left",
+	content_css : "/static/site19342.css",
+	relative_urls : false
+});
+
+//-->
+</script>
+
+
+
+
+<link rel="alternate" href="http://9.douban.com/rss/culture" type="application/rss+xml" title="九点 文化">
+
+</head><body>
+
+<link href="/static/site19342.css" rel="stylesheet" type="text/css">
+
+<link href="/static/am19342.css" rel="stylesheet" type="text/css">
+
+<!--这里是LOGO导航条-->
+<div class="header"><div class="wapper clearfix">
+<a href="/">
+<div class="logo"><h1>风语杨柳岸</h1></div>
+</a>
+<ul class="menu clearfix">
+<li><a href="/">首页</a></li><li>|</li>
+
+<li><a href="/blog">bolg</a></li>
+<li>|</li>
+<li><a href="/life">生活</a></li>
+<li>|</li>
+<li><a href="/technology">科技</a></li>
+<li>|</li>
+<li><a href="/fun">趣味</a></li>
+</ul>
+<ul class="nav clearfix">
+{% if user %}
+ <li>{{user.nickname}}</li><li>·</li><li><a href="/blog/admin">发表新的文章</a></li><li>·</li><li><a href="/logout">退出</a></li>
+{% else %}
+<li><a href="/login">登录</a></li>
+{% endif %}
+</ul>
+</div></div>
+<div class="bold_line"></div>
+
+<!--主框架层-->
+<div class="wapper clearfix main">
+
+<!--左侧框架层-->
+
+
+
+
+<div class="block4">
+
+
+<form  method="post">
+<label for="title">Title:</label> <br />
+<input name="title" id="title" maxlength="100" value="{{article.title}}" />
+<br />
+<label for="author">Author</label> <br />
+<input name="author" id="author" maxlength="100" value = "{{article.author}}" />
+<br />
+<label for="tags">Tags</label> <br />
+<input name="tags" id="tags" maxlength="100"  value="{{article.tags}}"/>
+<br />
+<label for="post_content">Content:</label> <br />
+<textarea name="content" id="content" cols="80" rows = "30">{{article.content}}</textarea>
+<input type="hidden" name = "article_id" value="{{article.id}}">
+<input type="submit" value="Submit" />
+<a href="/blog/delete/{{ article.id}}">删除这篇文章</a>
+</form>
+
+
+</div>
+
+</div>
+
+</div>
+<div class="footer"><div class="fnav">
+<a href="/about">关于 风语杨柳岸</a>
+· <a href="/contact">联系风语杨柳岸</a>
+ · <a href="/announce">免责声明</a>
+ · <a href="/service/">服务(API)</a>
+</div>© 2009 willow-wind.appspot.com, all rights reserved</div>
+<div style="margin: 5px; background: yellow none repeat scroll 0% 0%; position: absolute; left: 0pt; top: 0pt; z-index: 1000; font-family: arial; font-size: 13px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px; opacity: 0.9; display: none;" id="dictdiv"></div><div id="dictaudio"></div>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3970960-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body></html>

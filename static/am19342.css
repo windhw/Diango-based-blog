@@ -1,0 +1,29 @@
+h1,h2,label {color:#333}
+
+.main {background-position:left 0;}
+
+
+.header {background:#008083 url(/pics/newnine/headerbg.jpg) repeat-x;}
+.header .menu li a,.header .nav li a,.header .menu li,.header .nav li  {color:#fff}
+.header .menu li {}
+.bold_line {background:#659A90;}
+
+.block1 .content .headline,.block3 {background:#edf4f1}
+
+.block2 {border:1px solid #d1e1e0}
+.block2 h2 {background:#f0f6f4}
+.block2 .top em {background-position:right 0;}
+.block2 .top b {background-position:0 0;}
+.block2 .bottom b {background-position:0 -3px;}
+.block2 .bottom em {background-position:right -3px;}
+
+/*reader*/
+.dir_tree {background-color:#f0f6f4}
+
+.dir_tree .now,
+.dir_tree .now a,
+.dir_tree .now a:hover,
+.dir_tree .now a:visited{color:#fff;background-color:#b2d9d8;}
+.dir_tree a span {color:#333}
+.dir_tree .now a span {color:#fff} 
+

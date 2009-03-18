@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>风语杨柳岸</title>
+</script>
+<link rel="alternate" href="http://willow-wind.appspot.com/rss/" type="application/rss+xml" title="风雨杨柳岸">
+
+</head><body>
+
+<link href="/static/site19342.css" rel="stylesheet" type="text/css">
+
+<link href="/static/am19342.css" rel="stylesheet" type="text/css">
+
+<!--这里是LOGO导航条-->
+<div class="header"><div class="wapper clearfix">
+<a href="/">
+<div class="logo"><h1>风语杨柳岸</h1></div>
+</a>
+<ul class="menu clearfix">
+<li><a href="/">首页</a></li><li>|</li>
+
+<li><a href="/blog">Blog</a></li><li>|</li><li><a href="/life">生活</a></li>
+<li>|</li><li><a href="/technology">科技</a></li><li>|</li><li><a href="/fun">趣味</a></li>
+</ul>
+<ul class="nav clearfix">
+{% if user %}
+ <li>{{user.nickname}}</li><li>·</li>
+ {% if  is_admin %}
+ <li><a href="/blog/admin">发表新的文章</a></li><li>·</li>
+ {% endif %}
+<li><a href="/logout">退出</a></li>
+{% else %}
+<li><a href="/login">登录</a></li>
+{% endif %}
+
+</ul>
+</div></div>
+<div class="bold_line"></div>
+
+<!--主框架层-->
+<div class="wapper clearfix main">
+
+<!--左侧框架层-->
+
+<div class="left">
+<h1>风语杨柳岸<span> 免责声明</span> </h1>
+<div class="block3 clearfix">
+<a href=""><img src="/static/willow.jpg"/> </a>
+<dl>
+<dd><h2><div class="summary">这个小站样式模仿豆瓣9点，纯属个人娱乐使用。</div></h2>
+<div class="from">
+Welcome to <a href="/"> 风语杨柳岸</a> 
+</div>
+</dd>
+</dl>                          
+</div>
+
+
+<div class="block4">
+
+</div>
+</div>
+
+
+<div class="right">
+
+<div class="block2">
+<div class="top clearfix"><em></em><b></b></div>
+<h2><b>关于这个站点</b></h2>
+<ul>
+<li>它的模板来源于<a href="http://9.douban.com">豆瓣九点</a>，just for fun：）</li>
+
+</ul>
+<div class="bottom clearfix"><em></em><b></b></div>
+</div>
+
+
+
+</div>
+</div>
+<div class="footer"><div class="fnav">
+<a href="/about">关于 风语杨柳岸</a>
+· <a href="/contact">联系风语杨柳岸</a>
+ · <a href="/announce">免责声明</a>
+ · <a href="/service/">服务(API)</a>
+</div>© 2009 willow-wind.appspot.com, all rights reserved</div>
+<div style="margin: 5px; background: yellow none repeat scroll 0% 0%; position: absolute; left: 0pt; top: 0pt; z-index: 1000; font-family: arial; font-size: 13px; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px; opacity: 0.9; display: none;" id="dictdiv"></div><div id="dictaudio"></div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-3970960-3");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</body></html>
